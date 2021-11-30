@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="css/survey.css" type="text/css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="frmh" position="fixed">
+        <h1 class="align" id="title">Food Survey Form</h1>
+        <p style="color: rgb(255, 255, 255);" class="align" id="description">Thank you for taking your time to take the survey
+        </p>
+    </div>
+<br>
+
+    <div class="frm">
+        <form class="list" id="survey-form".>
+            <div>
+                <label id="name-label" class="ali" style="font-weight: bold";>Name</label>
+                <input type="text" maxlength="12" placeholder="  Enter your Name" id="name" class="txt" required>
+            </div><br>
+
+            <div>
+                <label id="email-label" class="ali" style="font-weight: bold";>Email ID</label>
+                <input type="email" id="email" placeholder="  Enter your Email ID" class="txt" required>
+            </div><br>
+
+            <div>
+                <label for="age" class="ali" style="font-weight: bold"; id="number-label">Age(Optional)</label>
+                <input type="number" id="number" maxlength="2" placeholder="  Enter your Age" class="txt" min="5" max="99">
+            </div><br>
+
+            <div>
+                <label for="gender" class="ali" style="font-weight: bold";>Gender</label>
+                <label for="male"> <input type="radio" name="Gender" id="male" value="Male">Male</label><br>
+                <label for="female"><input type="radio" name="Gender" id="female" value="Female">Female</label><br>
+                <label for="others"><input type="radio" name="Gender" id="others" value="Others">Others</label><br>
+                <label for="not"> <input type="radio" name="Gender" id="not" value="Prefer not to say">Prefer not to
+                    say</label>
+            </div>
+
+            <div>
+                <p>What type of dish would you prefer to eat at our restaurant?</p>
+                <select name="dropdown" id="dropdown" class="txt">
+                    <option disabled selected value> Select an option</option>
+                    <option value="shonen">Pasta & risotto</option>
+                    <option value="shojo">Salad</option>
+                    <option value="isekai">Bread & doughs</option>
+                    <option value="romance">Curry</option>
+                    <option value="supernatural">Antipasti</option>
+                    <option value="slice">Roast</option>
+                    <option value="fantacy">BBQ food</option>
+                    <option value="fantacy">Sandwiches & wraps</option>
+                    <option value="fantacy">Pizza</option>
+                    <option value="fantacy">Meatballs</option>
+                </select>
+            </div>
+
+            <div>
+                <p>From a scale of 1-5, how much would you rate our customer service?</p>
+                <label for="1"> <input type="radio" name="rating" id="1" value="1">1 star
+                    </label><br>
+                <label for="2"> <input type="radio" name="rating" id="2" value="2">2 stars
+                    </label><br>
+                <label for="3"><input type="radio" name="rating" id="3" value="3">3 stars
+                    </label><br>
+                <label for="4"><input type="radio" name="rating" id="4" value="4">4 stars
+                    </label><br>
+                <label for="5"> <input type="radio" name="rating" id="5"  value="5">5 stars
+                    </label><br>
+            </div>
+
+            <div>
+                <p>Select the type of service that was provided to you <em>(select all that applies)</em></p>
+                <label for="Neat">
+                    <input type="checkbox" value="Neat">Neat
+                </label><br>
+                <label for="Responsive">
+                    <input type="checkbox" value="Responsive">Responsive
+                </label><br>
+                <label for="Friendly">
+                    <input type="checkbox" value="Friendly">Friendly
+                </label><br>
+                <label for="Quick">
+                    <input type="checkbox" value="Quick">Quick
+                </label><br>
+                <label for="Quality issue with food">
+                    <input type="checkbox" value="Quality issue with food">Quality issue with food
+                </label><br>
+                <label for="Waiter was unresponsive">
+                    <input type="checkbox" value="Waiter was unresponsive">Waiter was unresponsive
+                </label><br>
+                <label for="Food took too long">
+                    <input type="checkbox" value="Food took too long">Food took too long
+                </label><br>
+                <label for="Satisfactory">
+                    <input type="checkbox" value="Satisfactory">Satisfactory
+                </label><br>
+            </div>
+
+            <div>
+                <p>Any Comments or Suggestions?</p>
+                <textarea id="input" class="b" name="suggestions" placeholder="Enter your comments here..."></textarea>
+            </div><br>
+
+            <div>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
